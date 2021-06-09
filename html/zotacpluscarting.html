@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+  <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <title>Zotac Cart Helper</title>
+  </head>
+
+  <style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .product-add-form, .box-tocart{
+      display: flex;
+    }
+
+    .product-add-form form{
+      margin: auto;
+      padding-left: 5px;
+    }
+
+
+  </style>
+  <script>
+    function setKey(){
+      keys = document.getElementsByName("form_key");
+      console.log(keys);
+      keys.forEach(element => {
+        element.value = document.getElementById('fk').value
+        console.log("a");
+      });
+      //document.getElementsByName('form_key') = 
+    }
+  </script>
+
+  <body>
+    <div id="formKey">
+      <h2> ENTER YOUR ZOTAC FORM_KEY VALUE FOR 'ADD TO CART' BUTTON FUNCTIONALITY</h2>
+      <h3>To get your form_key visit a zotac web page while logged and open the web developer console and enter the follolwing command:  document.querySelector('[name="form_key"]');</h3>
+      <form  style="display: inline-grid;">
+        <div style="display: block ruby;">
+          <input type="text" id="fk" name="form_key" placeholder="Your form_key here">
+          <input id="fk_button" type="button" value="Set Key" onclick="setKey(this)">
+        </div>
+      </form>
+    </div>
+    <h1>Zotac Store Links</h1>
+    <p>Zotac Store Front Page: <a href="https://us.zotacstore.com/us/" target="_blank">https://us.zotacstore.com/us/</a></p>
+    <p>Zotac Customer Account Login: <a href= "https://us.zotacstore.com/us/customer/account/login/" target="_blank">https://us.zotacstore.com/us/customer/account/login/</a></p>
+    <p>Zotac Checkout Cart Set Shipping Method <a href="https://us.zotacstore.com/us/checkout/#shipping" target="_blank">https://us.zotacstore.com/us/checkout/#shipping</a></p>
+    <p>Zotac Checkout Cart: <a href="https://us.zotacstore.com/us/checkout/cart/" target="_blank">https://us.zotacstore.com/us/checkout/cart/</a></p>
+    <p>Zotac Wishlist: <a href="https://us.zotacstore.com/us/wishlist/" target="_blank">https://us.zotacstore.com/us/wishlist/</a></p>
+
+    <h1>Zotac Paypal Express Links</h1>
+    <p>Paypal <a href="https://www.paypal.com" target="_blank">https://www.paypal.com</a></p>
+    <p>Paypal Express Start <a href="https://us.zotacstore.com/us/paypal/express/start" target="_blank">https://us.zotacstore.com/us/paypal/express/start</a></p>
+    <p>Paypal Express Review <a href="https://us.zotacstore.com/us/paypal/express/review" target="_blank">https://us.zotacstore.com/us/paypal/express/review</a></p>
+    <p>Paypal Express placeOrder <a href="https://us.zotacstore.com/us/paypal/express/placeOrder" target="_blank">https://us.zotacstore.com/us/paypal/express/placeOrder</a></p>
+
+    <h1>Zotac GPU Links</h1>
+    <p>All Zotac Graphics Cards: <a href="https://us.zotacstore.com/us/graphics-cards?product_list_order=price&amp;product_list_limit=36" target="_blank"> PRODUCT PAGE </a></p>
+    <p>All Zotac RTX 30 Series: <a href="https://us.zotacstore.com/us/graphics-cards/geforce-rtx-30-series?product_list_limit=36&amp;product_list_order=price" target="_blank"> PRODUCT PAGE </a></p>
+    
+
+
+
+    <div id="3090s">
+      <h2>Zotac 3090 Series: <a href="https://us.zotacstore.com/us/graphics-cards/geforce-rtx-30-series/geforce-rtxtm-3090" target="_blank"> PRODUCT PAGE </a></h2>
+      <p>ZOTAC GAMING GeForce RTX 3090 Trinity: <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3090-trinity-zt-a30900d-10p?qty=1" target="_blank"> PRODUCT PAGE </a> </p>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3090 Trinity OC: <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3090-trinity-oc-zt-a30900j-10p?qty=1" target="_blank"> PRODUCT PAGE </a> 
+          <div class="product-add-form">
+            <form data-product-sku="ZT-A30900J-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA5MC10cmluaXR5LW9jLXp0LWEzMDkwMGotMTBw/product/1702/"
+              method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+              <input type="hidden" name="product" value="1702" /> 
+              <input type="hidden" name="selected_configurable_option" value="" /> 
+              <input type="hidden" name="related_product" id="related-products-field" value="" />
+              <input type="hidden" name="item" value="1702" /> 
+              <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+              <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty"
+              class="input-text qty" data-validate=
+              "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+              <div class="actions">
+                <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                  <span>Add To Cart</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </p>
+      </div>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3090 AMP Core Holo: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3090-amp-core-holo-zt-a30900c-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30900C-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA5MC1hbXAtY29yZS1ob2xvLXp0LWEzMDkwMGMtMTBw/product/1727/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1727" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1727" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+          
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="3080s">
+      <h2>Zotac 3080 Series: <a href="https://us.zotacstore.com/us/graphics-cards/geforce-rtx-30-series/geforce-rtxtm-3080-1" target="_blank"> PRODUCT PAGE </a></h2>
+    
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3080 Trinity: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3080-trinity-zt-a30800d-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30800D-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA4MC10cmluaXR5LXp0LWEzMDgwMGQtMTBw/product/1668/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1668" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1668" /> <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+          
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3080 Trinity OC: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3080-trinity-oc-zt-a30800j-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30800J-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA4MC10cmluaXR5LW9jLXp0LWEzMDgwMGotMTBw/product/1672/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1672" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1672" /> <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3080 Trinity OC White Edition: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3080-trinity-oc-white-edition-zt-a30800k-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30800K-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA4MC10cmluaXR5LW9jLXdoaXRlLWVkaXRpb24tenQtYTMwODAway0xMHA%2C/product/1694/"
+          method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1694" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1694" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+            
+              <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+              "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+              <div class="actions">
+                <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                  <span>Add To Cart</span>
+                </button>
+              </div>
+            </div>
+          </form>
+      </div>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3080 AMP Holo: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3080-amp-holo-zt-a30800f-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30800F-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA4MC1hbXAtaG9sby16dC1hMzA4MDBmLTEwcA%2C%2C/product/1683/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1683" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden"name="item" value="1683" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="3070s">
+      <h2>Zotac 3070 Series: <a href="https://us.zotacstore.com/us/graphics-cards/geforce-rtx-30-series/geforce-rtxtm-3070" target="_blank"> PRODUCT PAGE </a></h2>
+        
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3070 Twin Edge OC 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3070-twin-edge-oc-zt-a30700h-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30700H-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA3MC10d2luLWVkZ2Utb2MtenQtYTMwNzAwaC0xMHA%2C/product/1676/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1676" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1676" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+          
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3070 Twin Edge OC White Edition: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3070-twin-edge-oc-white-edition-zt-a30700j-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30700J-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA3MC10d2luLWVkZ2Utb2Mtd2hpdGUtZWRpdGlvbi16dC1hMzA3MDBqLTEwcD9xdHk9MQ%2C%2C/product/1686/"
+          method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1686" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1686" /> 
+            <input name="form_key" type="hidden" value="REPLACEWITHFORM_KEY" />
+
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3070 AMP Holo: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3070-amp-holo-zt-a30700f-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30700F-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA3MC1hbXAtaG9sby16dC1hMzA3MDBmLTEwcA%2C%2C/product/1693/"
+          method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1693" />
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1693" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+          
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="3060Ties">
+      <h2>Zotac 3060Ti Series: <a href="https://us.zotacstore.com/us/graphics-cards/geforce-rtx-30-series/geforce-rtxtm-3060-ti" target="_blank"> PRODUCT PAGE </a></h2>
+    
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3060 Ti Twin Edge: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3060-ti-twin-edge-zt-a30610e-10m?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+      </div>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3060 Ti Twin Edge OC: <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3060-ti-twin-edge-oc-zt-a30610h-10m?qty=1" target="_blank"> PRODUCT PAGE </a> </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30610H-10M" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA2MC10aS10d2luLWVkZ2Utb2MtenQtYTMwNjEwaC0xMG0%2C/product/1688/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1688" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden"name="item" value="1688" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+          
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="3060s">
+      <h2>Zotac 3060 Series: <a href="https://us.zotacstore.com/us/graphics-cards/geforce-rtx-30-series/geforce-rtxtm-3060" target="_blank"> PRODUCT PAGE </a></h2>
+    
+      <p>ZOTAC GAMING GeForce RTX 3060 Twin Edge: 
+        <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3060-twin-edge-zt-a30600e-10m?qty=1" target="_blank"> PRODUCT PAGE </a>
+      </p>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3060 Twin Edge OC: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3060-twin-edge-oc-zt-a30600h-10m?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZT-A30600H-10M" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA2MC10d2luLWVkZ2Utb2MtenQtYTMwNjAwaC0xMG0%2C/product/1707/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1707" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1707" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING GeForce RTX 3060 AMP White Edition: 
+          <a href="https://us.zotacstore.com/us/zotac-gaming-geforce-rtx-3060-amp-white-edition-zt-a30600f-10p?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form" >
+          <form data-product-sku="ZT-A30600F-10P" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1nYW1pbmctZ2Vmb3JjZS1ydHgtMzA2MC1hbXAtd2hpdGUtZWRpdGlvbi16dC1hMzA2MDBmLTEwcA%2C%2C/product/1721/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1721" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1721" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" style="margin: auto; padding-left: 5px;" />
+
+            <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+              <span>Add To Cart</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+
+    <div id="Accessories">
+      <h2>Zotac Accessories: <a href="https://us.zotacstore.com/us/accessories" target="_blank"> PRODUCT PAGE </a></h2>
+
+      <div class="box-tocart">
+        <p>ZOTAC GAMING 5V 3-PIN RGB GRAPHICS CARD SUPPORT BRACKET: 
+          <a href="https://us.zotacstore.com/us/za-gpu-bk-01?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZA-GPU-BK-01" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96YS1ncHUtYmstMDE%2C/product/1722/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1722" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1722" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      
+      
+      <div class="box-tocart">
+        <p>ZOTAC ASM1153E USB 3.0 TO SATA III ADAPTER: 
+          <a href="https://us.zotacstore.com/us/zotac-asm1153e-usb-3-0-to-sata-iii-adapter-ztadp-s3u3-1153e?qty=1" target="_blank"> PRODUCT PAGE </a>
+        </p>
+
+        <div class="product-add-form">
+          <form data-product-sku="ZTADP-S3U3-1153E" action="https://us.zotacstore.com/us/checkout/cart/add/uenc/aHR0cHM6Ly91cy56b3RhY3N0b3JlLmNvbS91cy96b3RhYy1hc20xMTUzZS11c2ItMy0wLXRvLXNhdGEtaWlpLWFkYXB0ZXItenRhZHAtczN1My0xMTUzZQ%2C%2C/product/1194/"
+            method="post" id="product_addtocart_form" name="product_addtocart_form" target="_blank">
+            <input type="hidden" name="product" value="1194" /> 
+            <input type="hidden" name="selected_configurable_option" value="" /> 
+            <input type="hidden" name="related_product" id="related-products-field" value="" /> 
+            <input type="hidden" name="item" value="1194" /> 
+            <input name="form_key" type="hidden" value="REPLACEFORM_KEY" />
+
+            <input type="hidden" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate=
+            "{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:0,&quot;maxAllowed&quot;:1}}" />
+
+            <div class="actions">
+              <button type="submit" title="Add To Cart" class="action primary tocart" id="product-addtocart-button">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+  </body>
+</html>
