@@ -6,10 +6,13 @@ if(pagetitle.includes("PayPal Checkout")) {
 	document.querySelector('[id="payment-submit-btn"]').click();
     },5000);
 }
-if(pagetitle.includes("Log in to your PayPal account")) {
-    console.log("PayPal Log in Page");
-    setInterval(function() {
-	console.log("login function")
-	document.querySelector('[id="btnLogin"]').click();
-    },5000);
-}
+
+// Needs fixed.
+//
+//if(pagetitle.includes("Log in to your PayPal account")) {
+//    console.log("PayPal Log in Page");
+//    setInterval(function() {
+//	console.log("login function")
+//	document.querySelector('[id="btnLogin"]').click();
+//    },5000);
+//}
