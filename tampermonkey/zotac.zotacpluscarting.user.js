@@ -1,18 +1,20 @@
 // ==UserScript==
 // @name         zotac.zotacpluscarting
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      2021061001
 // @description  try to take over the world!
 // @author       You
 // @match        http://localhost:8000/zotacpluscarting.html
 // @icon         https://www.google.com/s2/favicons?domain=undefined.localhost
+// @downloadURL  https://raw.githubusercontent.com/krowve/zotacscripts/main/html/zotacpluscarting.html
+// @updateURL    https://raw.githubusercontent.com/krowve/zotacscripts/main/html/zotacpluscarting.html
 // @grant        none
 // ==/UserScript==
 
 // Get the form_key with the following command from a zotacpage:
-// document.querySelector('input[name="form_key"]').value
+// document.getElementsByName("form_key")[0].value
 // Browse to your local page and then set the form_key value
-// with the following command
+// with the following command from developer console
 // localStorage.setItem("form_key","REPLACEWITHYOURFORMKEY");
 
 (function() {
@@ -26,5 +28,6 @@
         console.log("Replacing form_key with " + form_key);
         console.log("If form_key is null you need to set it manually");
         console.log("Look at comments in code for instructions");
+        console.log("Double check the CORRECT form_key value is set");
     }
 })();
