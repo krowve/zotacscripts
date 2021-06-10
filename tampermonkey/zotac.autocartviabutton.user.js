@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Krowve - autocartviabutton.js
+// @name         zotac.autocartviabutton
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      2021061001
 // @description  try to take over the world!
 // @author       You
 // @match        https://us.zotacstore.com/*
