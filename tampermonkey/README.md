@@ -2,7 +2,7 @@
 
 ## **AUTO CART VIA ATC BUTTON**
 
-### autocartviabutton.js
+### zotac.autocartviabutton
 
 If a 30 series product page is detected on zotac the script will try
 to detect if you already have something in your cart.  If your cart
@@ -15,7 +15,7 @@ carting it will redirect to the shipping method page.
 ***
 ## **LAUNCH FROM CART**
 
-### launfromcart.js
+### zotac.launchfromcart
 
 This script will check to see if the page loaded is the shopping cart
 page.  If it is and it sees an item come in stock it will launch a
@@ -46,16 +46,9 @@ allow popups from zotac if you are using this script.
 
 
 ***
-## **PAYPAL**
-
-### paypal.js
-
-This script will check to see if the page loaded is the paypal page.
-If it is the checkout page it will click the continue button.
-Currently not working on tampermonkey.  OnLoad version works.  
-
-***
 ## **CART FROM WISHLIST**
+
+### zotac.cartfromwishlist
 
 This script will monitor your wishlist page.  If anything from your
 wishlist page comes in stock this script will pick a card to cart
@@ -97,13 +90,4 @@ number, it will look like this ['86004','86055']
 You can add as many items as are on your wishlist, just seperate each
 item with a comma and use ' ' as a container
 ['product1','product2','product3','product4']
-***
-## **LOCALCART**
-
-### localcart.js
-
-When used with the localcart.html template will auto click the ATC
-button.  See the zotac guide for more information on how to create
-static HTML pages with the right form_key value.
-
 ***
