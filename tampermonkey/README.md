@@ -29,7 +29,7 @@ localStorage.setItem("launchfromcart", "0");
 ***
 ## **CHECKOUT HELPER only launch paypal once**
 
-### checkout-launch-paypal-once.js
+### zotac.checkout-launch-paypal-once.user.js
 
 This script will check to see if the page loaded is the checkout page.
 If it is the checkout page it will set the shipping method, click
