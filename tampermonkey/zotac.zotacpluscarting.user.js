@@ -6,8 +6,8 @@
 // @author       You
 // @match        http://localhost:8000/zotacpluscarting.html
 // @icon         https://www.google.com/s2/favicons?domain=undefined.localhost
-// @downloadURL  https://raw.githubusercontent.com/krowve/zotacscripts/main/html/zotacpluscarting.html
-// @updateURL    https://raw.githubusercontent.com/krowve/zotacscripts/main/html/zotacpluscarting.html
+// @downloadURL  https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.zotacpluscarting.user.js
+// @updateURL    https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.zotacpluscarting.user.js
 // @grant        none
 // ==/UserScript==
 
