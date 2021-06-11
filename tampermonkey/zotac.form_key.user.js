@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         zotac.form_key
 // @namespace    http://tampermonkey.net/
-// @version      2021060901
+// @version      2021061101
 // @description  try to take over the world!
 // @author       You
 // @match        https://us.zotacstore.com/*
 // @icon         https://www.google.com/s2/favicons?domain=zotacstore.com
+// @downloadURL  https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.form_key.user.js
+// @updateURL    https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.form_key.user.js
 // ==/UserScript==
 
 // Displays form_key value over and over again on the console.
