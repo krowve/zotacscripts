@@ -18,9 +18,14 @@ var AUDIOURL="https://www.myinstants.com/media/sounds/tmpbxydyrz3.mp3";
 var pagetitle = String(document.title);
 if (pagetitle.includes("Shopping Cart")) {
   console.log(document.title);
+  if (localStorage.getItem("launchfromcart") == null) {
+      localStorage.setItem("launchfromcart","0");
+  }
+  if (localStorage.getItem("paypal") == null) {
+      localStorage.setItem("paypal","0");
+  }
 
-  setTimeout(function(){ location.reload(true); },10000);
-
+  setTimeout(function(){ location.reload(true); },20000);
 
   var idVar = setInterval(function() {
 
