@@ -6,6 +6,8 @@
 // @author       You
 // @match        https://us.zotacstore.com/us/*
 // @icon         https://www.google.com/s2/favicons?domain=zotacstore.com
+// @downloadURL  https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.cartfromwishlist.user.js
+// @updateURL    https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.cartfromwishlist.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -25,6 +27,12 @@
     if (pagetitle.includes("My Wish List")) {
 	setTimeout(function(){ location.reload(true); },REFRESHTIMER);
 	console.log("Setting refresh to " + REFRESHTIMER);
+	if (localStorage.getItem("launchfromcart") == null) {
+	    localStorage.setItem("launchfromcart","0");
+	}
+	if (localStorage.getItem("paypal") == null) {
+	    localStorage.setItem("paypal","0");
+	}
     }
 
 
