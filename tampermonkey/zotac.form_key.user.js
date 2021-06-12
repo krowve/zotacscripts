@@ -6,8 +6,6 @@
 // @author       You
 // @match        https://us.zotacstore.com/*
 // @icon         https://www.google.com/s2/favicons?domain=zotacstore.com
-// @downloadURL  https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.form_key.user.js
-// @updateURL    https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.form_key.user.js
 // ==/UserScript==
 
 // Displays form_key value over and over again on the console.

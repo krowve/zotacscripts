@@ -6,8 +6,6 @@
 // @author       You
 // @match        https://us.zotacstore.com/us/checkout/*
 // @icon         https://www.google.com/s2/favicons?domain=zotacstore.com
-// @downloadURL  https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.launchfromcart.user.js
-// @updateURL    https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.launchfromcart.user.js
 // @grant        none
 // ==/UserScript==
 
