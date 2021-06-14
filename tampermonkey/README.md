@@ -46,7 +46,24 @@ allow popups from zotac if you are using this script.
 
 
 ***
-## **CART FROM WISHLIST**
+## **CHECKOUT MONITOR**
+
+### zotac.checkoutmonitor.user.js
+
+This script will attempt to visit the
+https://zotacstore.com/us/checkout/#shipping page.  If there is
+nothing in the cart or the item is out of stock you will be redirected
+to the shopping cart.  If the shopping cart is detected it will reload
+the https://zotacstore/us/checkout/#shipping page again.  If an in
+stock item is in the cart then instead of being redirected back to the
+cart you will be redirected to the page where you can set the shipping
+method.
+
+When seeking a card set paypal to 0 in localStorage.
+
+localStorage.setItem("paypal", "0");
+
+method.  *** ## **CART FROM WISHLIST**
 
 ### zotac.cartfromwishlist
 
