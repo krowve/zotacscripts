@@ -16,18 +16,18 @@
 (function() {
     'use strict';
 
+
+
 setInterval(function() {
 
     var pagetitle = String(document.title);
     if (pagetitle.includes("Shopping Cart  |  The ZOTAC Store")) {
         console.log(document.title);
         window.location = "https://us.zotacstore.com/us/checkout/#shipping";
-         if (localStorage.getItem("launchfromcart") == null) {
-             localStorage.setItem("launchfromcart","0");
-         }
         if (localStorage.getItem("paypal") == null) {
             localStorage.setItem("paypal","0");
         }
+        console.log("localStorage paypal value is set to " + localStorage.getItem("paypal"));
 
     }
 
