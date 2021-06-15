@@ -21,7 +21,7 @@
 setInterval(function() {
 
     var pagetitle = String(document.title);
-    if (pagetitle.includes("Shopping Cart  |  The ZOTAC Store")) {
+    if (pagetitle.includes("Shopping Cart")) {
         console.log(document.title);
         window.location = "https://us.zotacstore.com/us/checkout/#shipping";
         if (localStorage.getItem("paypal") == null) {
