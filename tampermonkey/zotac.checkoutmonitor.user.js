@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         zotac.checkoutmonitor
 // @namespace    http://tampermonkey.net/
-// @version      2021061101
+// @version      2021061401
 // @description  try to take over the world!
 // @author       You
 // @match        https://us.zotacstore.com/us/checkout/*
@@ -16,20 +16,38 @@
 (function() {
     'use strict';
 
-
-
 setInterval(function() {
 
+
+    if (localStorage.getItem("paypal") == null) {
+        localStorage.setItem("paypal","0");
+    }
+    console.log("localStorage paypal value is set to " + localStorage.getItem("paypal"));
     var pagetitle = String(document.title);
-    if (pagetitle.includes("Shopping Cart")) {
+    if (pagetitle.includes("Shopping Cart  |  The ZOTAC Store")) {
         console.log(document.title);
-        window.location = "https://us.zotacstore.com/us/checkout/#shipping";
-        if (localStorage.getItem("paypal") == null) {
-            localStorage.setItem("paypal","0");
+        var checkout = 1;
+        var elementExists = document.getElementsByClassName("cart-empty");
+        if (elementExists.length > 0) {
+            checkout = 0;
         }
-        console.log("localStorage paypal value is set to " + localStorage.getItem("paypal"));
+        var maintenance = String(document.getElementsByClassName("message message-notice notice")[0].innerText);
+        if (maintenance.includes("Maintenance")) {
+            checkout = 0;
+        }
+        var OOS = document.getElementsByClassName("message-error");
+        if (OOS.length > 0) {
+            checkout = 0;
+        }
+        if (checkout) {
+            window.location = "https://us.zotacstore.com/us/checkout/#shipping";
+        } else {
+        setTimeout(function(){ window.location = "https://us.zotacstore.com/us/checkout/#shipping" }, 15000);
+        }
 
     }
+
+
 
     var urlstring = String(document.location.href);
     if (urlstring.includes("/checkout/#shipping")) {
@@ -47,5 +65,5 @@ setInterval(function() {
             console.log("Did you do localStorage.setItem step?");
 	}
     }
-},20000);
+},5000);
 })();
