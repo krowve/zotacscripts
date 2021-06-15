@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         zotac.checkoutmonitor
 // @namespace    http://tampermonkey.net/
-// @version      2021061401
+// @version      2021061403
 // @description  try to take over the world!
 // @author       You
 // @match        https://us.zotacstore.com/us/checkout/*
@@ -53,10 +53,7 @@ setInterval(function() {
     if (urlstring.includes("/checkout/#shipping")) {
     document.querySelector('[value="ups_GND"]').click();
     document.getElementsByTagName('button')[13].click();
-    }
-
-    if (urlstring.includes("#payment")) {
-	if (localStorage.getItem("paypal") == "0") {
+    if (localStorage.getItem("paypal") == "0") {
 	    localStorage.setItem("paypal","1");
 	    console.log("Launching paypal express start");
 	    window.open("https://us.zotacstore.com/us/paypal/express/start");
