@@ -4,7 +4,7 @@
 // @version      2021061101
 // @description  try to take over the world!
 // @author       You
-// @match        https://us.zotacstore.com/*
+// @match        https://www.zotacstore.com/*
 // @icon         https://www.google.com/s2/favicons?domain=zotacstore.com
 // ==/UserScript==
 
