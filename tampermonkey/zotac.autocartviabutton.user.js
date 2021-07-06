@@ -4,7 +4,7 @@
 // @version      2021061001
 // @description  try to take over the world!
 // @author       You
-// @match        https://us.zotacstore.com/*
+// @match        https://www.zotacstore.com/*
 // @icon         https://www.google.com/s2/favicons?domain=zotacstore.com
 // @grant        none
 // ==/UserScript==
@@ -28,7 +28,7 @@ if(pagetitle.includes("ZOTAC GAMING GeForce RTX 30")) {
           if (document.querySelector('[title="Add To Cart"]')) {
             console.log("Trying to Cart");
             document.querySelector('[title="Add To Cart"]').click();
-            window.location = "https://us.zotacstore.com/us/checkout/#shipping";
+            window.location = "https://www.zotacstore.com/us/checkout/#shipping";
           }
         } else {
       console.log("Out of Stock");
