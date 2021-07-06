@@ -4,7 +4,7 @@
 // @version      2021061101
 // @description  try to take over the world!
 // @author       You
-// @match        https://us.zotacstore.com/us/checkout/*
+// @match        https://www.zotacstore.com/us/checkout/*
 // @icon         https://www.google.com/s2/favicons?domain=zotacstore.com
 // @grant        none
 // ==/UserScript==
@@ -47,7 +47,7 @@ if (pagetitle.includes("Shopping Cart")) {
               audio.play();
               //window.open(AUDIOURL);
               console.log("Launching Checkout Link.  ");
-              window.open("https://us.zotacstore.com/us/checkout/#shipping");
+              window.open("https://www.zotacstore.com/us/checkout/#shipping");
               clearInterval(idVar);
             } else {
 		console.log("In stock but not carting");
