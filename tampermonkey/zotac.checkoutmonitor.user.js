@@ -4,7 +4,7 @@
 // @version      2021061403
 // @description  try to take over the world!
 // @author       You
-// @match        https://us.zotacstore.com/us/checkout/*
+// @match        https://www.zotacstore.com/us/checkout/*
 // @icon         https://www.google.com/s2/favicons?domain=zotacstore.com
 // @downloadURL  https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.checkoutoutmonitor.user.js
 // @updateURL    https://github.com/krowve/zotacscripts/raw/main/tampermonkey/zotac.checkoutoutmonitor.user.js
@@ -40,9 +40,9 @@ setInterval(function() {
             checkout = 0;
         }
         if (checkout) {
-            window.location = "https://us.zotacstore.com/us/checkout/#shipping";
+            window.location = "https://www.zotacstore.com/us/checkout/#shipping";
         } else {
-        setTimeout(function(){ window.location = "https://us.zotacstore.com/us/checkout/#shipping" }, 15000);
+        setTimeout(function(){ window.location = "https://www.zotacstore.com/us/checkout/#shipping" }, 15000);
         }
 
     }
@@ -56,7 +56,7 @@ setInterval(function() {
     if (localStorage.getItem("paypal") == "0") {
 	    localStorage.setItem("paypal","1");
 	    console.log("Launching paypal express start");
-	    window.open("https://us.zotacstore.com/us/paypal/express/start");
+	    window.open("https://www.zotacstore.com/us/paypal/express/start");
 	} else {
 	    console.log("paypal set to 1");
             console.log("Did you do localStorage.setItem step?");
